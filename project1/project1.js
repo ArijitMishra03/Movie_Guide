@@ -5,7 +5,7 @@ const inputBox=document.querySelector(".inputBox");
 const getMovieInfo=async (movie)=>{
     try{
     const myAPIKey="12138f51";
-    const url=`http://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
+    const url=`https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
 
     
     const response=await fetch(url);
